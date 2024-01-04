@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+        body{
+          width:100%;
+          height:100vh;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        form{
+        justify-content: center;
+        align-items: normal;
+        background-color: #fff(244, 248, 250, 0.753);
+        padding: 25px;
+        display: flex;
+        width: 150%;
+        height: 500px;
+        flex-direction: column;
+        border: black;
+        outline: groove;
+        }
+        label{
+        margin-top: 5px;
+        margin-bottom: 5px;  
+        border-width: 0;
+        font-weight:bolder;
+        text-align: start ;
+        }
+        input[type="submit"]{
+        width:100%;
+        margin:8px auto;
+        background-color: #181ee0;
+        color: #fff;
+        font-size: 18px;
+        padding: 16px 20;       
+        display: block;
+        cursor: pointer;
+        border-color: rgb(19, 19, 180);
+        }
+        input[type="text"],input[type="email"],input[type="password"] {
+        width: 100%;
+        height: 20px;
+        background-color: rgb(211, 202, 202);
+        border-color: rgb(211, 202, 202);
+        border: rgb(211, 202, 202);
+        }
+  </style>
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Register</h1>
+        <h4 style="font-weight: lighter ;">Kindly fill in this form to register.</h4>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter username" />
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter email" />
+        <label for="password">Password</label>
+        <input type="password" name="paasword" placeholder="Your password" />
+        <label for="password">Repeat Password</label>
+        <input type="password" name="password" placeholder="Repeat password" />
+        <input type="submit" value="Register" />
+        <p style="font-weight: lighter">Already have an account? <a href="google.com">Log in</a></p>
+      </form>
+    </div>
+  </body>
+</html>
