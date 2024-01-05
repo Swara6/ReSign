@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        
+        body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        justify-content: center;
+        align-items: normal;
+        background-color: white;
+        padding: 12px;
+        display: flex;
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-width: 0;
+        font-weight: 500px;
+      }
+      input[type="submit"] {
+        margin: 2px auto;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 28px;
+        display: block;
+        cursor: pointer;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #000;
+      }
+
+      p {
+        padding: 2px 0 4px 0;
+        text-align: center;
+      }
+      .checkbox {
+        margin: 15px 0 10px 0;
+      }
+      .fullname {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+        
+</head>
+<body>
+    <div class="form">
+        <form>
+            <h1 style="text-align: center;margin-bottom: auto;">Sign up</h1>
+        <p style="text-align: center; font-weight: lighter;"> Welcome,please sign up your account.</p>
+          <div class="fullname">
+              <div class="fname">
+             <label for="fname">First Name<span style="color:brown;">*</span></label>
+             <input type="text" name="fname" />
+          </div>
+          <div class="lastname">
+              <label for="lname">Last name <span style="color: brown;">*</span></label>
+              <input type="text" name="lname"/>
+          </div>
+          </div>
+          <label for="username">Username<span style="color: brown;">*</span></label>
+        <input type="text" name="username" />
+        <label for="email">Email<span style="color: brown;">*</span></label>
+        <input type="text" name="email"/>
+        <label for="password">Password<span style="color: brown;">*</span></label>
+        <input type="text" name="paasword" />
+        <label for="confirmpassword">Confirmpassword<span style="color: brown;">*</span></label>
+        <input type="text" name="confirmpassword" />
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" value="checkbox"/>
+            <label>I agree with terms and conditions</label>
+        </div>
+        <input type="submit" value="Sign up"/>
+        <p>
+            <span style="font-weight: bold; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Already have an account?</span> <a href="google.com">Sign in</a>
+        </p>
+        <p>
+           <a href="google.com">Term of use.Privacy policy</a>
+        </p>
+        </form>
+    </div>
+</body>
+</html>
